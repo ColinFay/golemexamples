@@ -1,0 +1,55 @@
+#' The application server-side
+#' 
+#' @param input,output,session Internal parameters for {shiny}. 
+#'     DO NOT REMOVE.
+#' @import shiny
+#' @import future
+#' @import promises
+#' @noRd
+app_server <- function( input, output, session ) {
+  # Setting the reactiveValues that will store everything
+  r <- reactiveValues(
+    sample = NULL
+  )
+  
+  # The clock logic
+  observe({
+    invalidateLater(1000)
+    r$time <- Sys.time()
+  })
+  
+  output$clock <- renderUI({
+    tags$div(
+      icon("clock"), tags$span(r$time)
+    )
+  })
+  
+  # Sending the future()
+  observeEvent( input$send , {
+    # Assigning the input to a variable so it can be used 
+    # inside future()
+    n_sec <- input$nsec
+    future({
+      # Sleeping for a couple of seconds
+      Sys.sleep(n_sec)
+      sample(1:1000, 10)
+    }) %...>%
+      (function(result){
+        # When we get the result, we assign it to r
+        r$sample <- result
+      }) %...!%
+      (function(error){
+        # If ever the future fails, we add a NULL
+        r$sample <- NULL
+        warning(error)
+      })
+    # We need to return something from the observeEvent otherwise it 
+    # will hang
+    return(NULL)
+  }, ignoreInit = TRUE)
+  
+  output$sample <- renderPrint({
+    r$sample
+  })
+  
+}
