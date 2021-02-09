@@ -25,7 +25,7 @@ app_ui <- function(request) {
             tags$p(
               "Code available at", 
               tags$a(
-                href = "https://github.com/ColinFay/golemexamples/golemfuture",
+                href = "https://github.com/ColinFay/golemexamples/tree/master/golemfuture",
                 "github.com/ColinFay/golemexamples/golemfuture"
               )
             )

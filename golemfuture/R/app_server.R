@@ -40,7 +40,7 @@ app_server <- function( input, output, session ) {
       }) %...!%
       (function(error){
         # If ever the future fails, we add a NULL
-        r$sample <- NULL
+        r$sample <- error
         warning(error)
       })
     # We need to return something from the observeEvent otherwise it 
