@@ -10,6 +10,8 @@ Gathering in one place some example of applications  built with `{golem}`.
 
 Application available at <https://connect.thinkr.fr/golemfuture>
 
-+ [golemwhereamidemo](/golemwhereamidemo): Using `{golemwhereamidemo}` for logging inside `{shiny}`
++ [golemwhereamidemo](/golemwhereamidemo): Using `{whereami}` for logging inside `{shiny}`
 
 Application available at <https://connect.thinkr.fr/golemwhereamidemo/>
+
++ [golemshinymanager](/golemshinymanager): Using `{shinymanager}` & `{golem}`

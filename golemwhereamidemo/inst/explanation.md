@@ -22,4 +22,4 @@ observeEvent( input$c , {
 })
 ```
 
-See code at <https://github.com/ColinFay/golemwhereamidemo>
+See code at [ColinFay/golemexamples/golemwhereamidemo](https://github.com/ColinFay/golemexamples/tree/master/golemwhereamidemo)
