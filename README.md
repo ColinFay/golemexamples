@@ -12,6 +12,8 @@ Gathering in one place some example of applications  built with `{golem}`.
 
 + [golempunkapi](/golempunkapi): Example of a Shiny app calling an API from the client-side
 
+> Application available at <https://connect.thinkr.fr/golempunkapi/>
+
 + [golemfuture](/golemfuture): Using `{future}` and `{promises}` for asynchronous programming in `{shiny}`
 
 > Application available at <https://connect.thinkr.fr/golemfuture>
@@ -23,3 +25,6 @@ Gathering in one place some example of applications  built with `{golem}`.
 + [golemshinymanager](/golemshinymanager): Using `{shinymanager}` & `{golem}`
 
 + [golemshinydash](/golemshinydash): Using `{shinydashboard}` & `{golem}`
+
++ [golemqlite](/golemqlite): Example of golem & sqlite.
+
