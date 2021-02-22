@@ -1,0 +1,31 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# golemqlite
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+Example of a golem app with a sqlite inside 
+
++ DB is created at runtime in [R/app_server.R](R/app_server.R)
+
++ A `trigger()` object is passed to update the output when clicked in module one 
+
++ We write to the DB in [R/mod_my_first_module.R](R/mod_my_first_module.R), with the function defined at [R/write_db.R](R/write_db.R)
+
++ We read the output in [R/mod_my_other_module.](R/mod_my_other_module.R)
+
++ With the `db_path` argument of `run_app`, we can point to another location for the DB
