@@ -1,0 +1,43 @@
+body {
+    background-color: #df6335;
+    color: white;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    min-height: 100vh;
+    background-image: url('beer.png');
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom; 
+}
+
+.inner {
+   
+    top: 2em;
+    left: 2em;
+    right: 2em;
+    bottom: 2em;
+    border-radius: 25px;
+    padding: 2em;
+  flex-grow: 1;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 1em;
+}
+
+#footer {
+    position:fixed;
+    right:0;
+    bottom:0;
+    margin:0;
+    width:75%;
+    height:75%;
+    background:url(http://i.imgur.com/FZoaLd0.jpg) no-repeat bottom right;
+    background-size:100%;
+}
