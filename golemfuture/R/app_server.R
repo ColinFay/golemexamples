@@ -12,6 +12,10 @@ app_server <- function( input, output, session ) {
     sample = NULL
   )
   
+  functions_for_future <- new.env()
+  
+  functions_for_future$sys_sleep_and_run <- sys_sleep_and_run
+  
   # The clock logic
   observe({
     invalidateLater(1000)
@@ -28,13 +32,15 @@ app_server <- function( input, output, session ) {
   observeEvent( input$send , {
     # Assigning the input to a variable so it can be used 
     # inside future()
-    n_sec <- input$nsec
+    ff <- list()
+    ff$n <- input$nsec
+    ff$sys_sleep_and_run <- sys_sleep_and_run
     future({
-      # Sleeping for a couple of seconds
-      Sys.sleep(n_sec)
-      sample(1:1000, 10)
+      #pkgload::load_all()
+      ff$sys_sleep_and_run(ff$n)
     }) %...>%
       (function(result){
+        message(result)
         # When we get the result, we assign it to r
         r$sample <- result
       }) %...!%

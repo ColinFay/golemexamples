@@ -9,7 +9,7 @@ golem::detach_all_attached()
 golem::document_and_reload()
 
 # Adding {future} plan
-plan(multisession)
+future::plan(future::multisession)
 
 # Run the application
 run_app()
