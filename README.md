@@ -6,13 +6,17 @@
 
 Gathering in one place some example of applications  built with `{golem}`.
 
-+ [golemhtmltemplate](/golemhtmltemplate): Using `htmlTemplate()` ans `{golem}` 
++ [golemhtmltemplate](/golemhtmltemplate): Using `htmlTemplate()` and `{golem}` 
 
 > Application available at <https://connect.thinkr.fr/golemhtmltemplate/>
 
 + [golempunkapi](/golempunkapi): Example of a Shiny app calling an API from the client-side
 
 > Application available at <https://connect.thinkr.fr/golempunkapi/>
+
++ [golemnotifyjs](/golemnotifyjs) Using [notifyjs](notifyjs.jpillora.com) in `{shiny}` via `{golem}` 
+
+> Application available at <https://connect.thinkr.fr/golemnotifyjs/>
 
 + [golemfuture](/golemfuture): Using `{future}` and `{promises}` for asynchronous programming in `{shiny}`
 

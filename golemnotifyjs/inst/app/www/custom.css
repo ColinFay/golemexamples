@@ -1,0 +1,24 @@
+body {
+    background-color: #313843;
+    color: white;
+}
+
+h1{
+  text-align: center;
+}
+
+.row {
+  padding: 1em;
+  border-style: solid;
+  border-width: 5px;
+  margin: 1em;
+  border-radius: 50px;
+  border-color: white;
+}
+
+.col-sm-4, .col-sm-12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
