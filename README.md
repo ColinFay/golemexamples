@@ -15,3 +15,5 @@ Application available at <https://connect.thinkr.fr/golemfuture>
 Application available at <https://connect.thinkr.fr/golemwhereamidemo/>
 
 + [golemshinymanager](/golemshinymanager): Using `{shinymanager}` & `{golem}`
+
++ [golemshinydash](/golemshinydash): Using `{shinydashboard}` & `{golem}`
