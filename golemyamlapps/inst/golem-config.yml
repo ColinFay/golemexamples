@@ -1,0 +1,23 @@
+default:
+  golem_name: golemyamlapps
+  golem_version: 0.0.0.9000
+  app_prod: no
+production:
+  app_prod: yes
+dev:
+  golem_wd: !expr here::here()
+one:
+  h1: Mtcars Plot
+  dataset: mtcars
+  column: mpg
+  ggtheme: theme_minimal
+two:
+  h1: Airquality Plot
+  dataset: airquality
+  column: Day
+  ggtheme: theme_bw
+three:
+  h1: ChickWeight Plot
+  dataset: ChickWeight
+  column: weight
+  ggtheme: theme_dark
