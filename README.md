@@ -34,3 +34,5 @@ Gathering in one place some example of applications  built with `{golem}`.
 
 + [golemyamlapps](/golemyamlapps): Same backend, different apps based on YAML & `{config}`.
 
++ [golembrochure](/golembrochure): Using `{golem}` and `{brochure}`.
+
