@@ -1,0 +1,67 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# golembrochure
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+An example of using `{brochure}` & `{golem}`.
+
+## Steps 
+
+1. Remove the app_server.R file, and the top of app_ui => You'll still need `golem_add_external_resources()`.
+
+2. Build the pages inside separate R scripts
+
+```{r}
+fs::dir_tree()
+```
+
+
+3. Replace `shinyApp` with `brochureApp` in `run_app()`, add the external resources, then your pages. 
+
+```{r}
+run_app <- function(
+  onStart = NULL,
+  options = list(), 
+  enableBookmarking = NULL,
+  ...
+) {
+  with_golem_options(
+    app = brochureApp(
+      # Putting the resources here
+      golem_add_external_resources(),
+      home(),
+      login(),
+      logout(),
+      onStart = onStart,
+      options = options, 
+      enableBookmarking = enableBookmarking
+    ), 
+    golem_opts = list(...)
+  )
+}
+```
+
+## Building the Docker container
+
+```
+docker build -t brochure .
+docker run -p 1234:80 -d brochure && \
+  sleep 5 && \
+  open http://localhost:1234
+```
+
