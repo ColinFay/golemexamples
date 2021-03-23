@@ -32,3 +32,5 @@ Gathering in one place some example of applications  built with `{golem}`.
 
 + [golemqlite](/golemqlite): Example of golem & sqlite.
 
++ [golemyamlapps](/golemyamlapps): Same backend, different apps based on YAML & `{config}`.
+
