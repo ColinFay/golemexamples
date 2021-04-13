@@ -19,8 +19,7 @@ mod_b_ui <- function(id){
 #' @noRd 
 mod_b_server <- function(input, output, session, questionnaire_responses){
   ns <- session$ns
-  observeEvent(
-    watch("printinfo"),{
+  on("printinfo",{
       print(questionnaire_responses$resp_id)
     })
   
