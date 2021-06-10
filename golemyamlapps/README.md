@@ -43,8 +43,7 @@ source("dev/run_dev.R", echo = TRUE)
 `R_CONFIG_ACTIVE` parameter (or also `GOLEM_CONFIG_ACTIVE` in modern
 versions of `{golem}`, check `R/app_config.R` for supported env var).
 
-`get_golem_config()` returns a character string, so it works like a
-charm in tagList:
+Remember that `get_golem_config()` always returns a character string.
 
 ``` r
 app_ui <- function(request) {
@@ -61,8 +60,6 @@ app_ui <- function(request) {
   )
 }
 ```
-
-But you might have to trick it in the server:
 
 ``` r
 app_server <- function( input, output, session ) {
