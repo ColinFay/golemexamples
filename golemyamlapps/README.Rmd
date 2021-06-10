@@ -50,7 +50,7 @@ source("dev/run_dev.R", echo = TRUE)
 
 ## How it works
 
-`get_golem_config()` will look for the value based on the `R_CONFIG_ACTIVE` parameter (or also `GOLEM_CONFIG_ACTIVE` in modern versions of `{golem}`, check `R/app_config.R` for supported env var).
+`get_golem_config()` will look for the value based on the `GOLEM_CONFIG_ACTIVE` parameter (or also `RCONFIG_ACTIVE` in some old versions of `{golem}`, check `R/app_config.R` for supported env var).
 
 Remember that `get_golem_config()` always returns a character string.
 
