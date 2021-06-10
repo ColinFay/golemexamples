@@ -38,13 +38,13 @@ three:
 ```
 
 ```r
-Sys.setenv("R_CONFIG_ACTIVE" = "one")
+Sys.setenv("GOLEM_CONFIG_ACTIVE" = "one")
 source("dev/run_dev.R", echo = TRUE)
 
-Sys.setenv("R_CONFIG_ACTIVE" = "two")
+Sys.setenv("GOLEM_CONFIG_ACTIVE" = "two")
 source("dev/run_dev.R", echo = TRUE)
 
-Sys.setenv("R_CONFIG_ACTIVE" = "three")
+Sys.setenv("GOLEM_CONFIG_ACTIVE" = "three")
 source("dev/run_dev.R", echo = TRUE)
 ```
 
