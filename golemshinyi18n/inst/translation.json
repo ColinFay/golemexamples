@@ -1,0 +1,11 @@
+{
+  "languages": ["en", "pl"],
+  "translation": [
+      {"en": "Hello Shiny!", "pl": "Witaj Shiny!"},
+      {
+        "en": "Frequency",
+        "pl": "Częstotliwość"
+      }
+    ],
+  "cultural_date_format": "%d-%m-%Y"
+}
