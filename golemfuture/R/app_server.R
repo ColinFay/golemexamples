@@ -12,10 +12,6 @@ app_server <- function( input, output, session ) {
     sample = NULL
   )
   
-  functions_for_future <- new.env()
-  
-  functions_for_future$sys_sleep_and_run <- sys_sleep_and_run
-  
   # The clock logic
   observe({
     invalidateLater(1000)
