@@ -1,0 +1,16 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# golemloadorder
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+This is a simple app to log where things happen, how often, and when,
+when running an app with `{golem}`.
+
+Every piece of the app has a `cli::cat_rule()` that prints to the
+console the place where it is.
+
+The idea here is to be able to use these simple logs to know how often
+specific pieces of the apps are called inside your infra.
