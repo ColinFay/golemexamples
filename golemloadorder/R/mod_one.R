@@ -13,6 +13,13 @@ mod_one_ui <- function(id){
   
   ns <- NS(id)
   tagList(
+    h2("Number passed from app.R"), 
+    tags$p(golem::get_golem_options("random_numb_from_outside")),
+    h2("Number passed from inside run_app"), 
+    tags$p(golem::get_golem_options("random_numb_from_inside")),
+    h2("Number passed from inside this module"), 
+    tags$p(textOutput(ns("number"))),
+    h2("a plot"),
     plotOutput(ns("plot"))
   )
 }
@@ -29,6 +36,10 @@ mod_one_server <- function(id){
     cli::cat_rule("mod_one_server.moduleServer()")
     
     ns <- session$ns
+    
+    output$number <- renderText({
+      rnorm(1)
+    })
     
     output$plot <- renderPlot({
       cli::cat_rule("mod_one_server.renderPlot()")

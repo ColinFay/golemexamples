@@ -6,9 +6,11 @@ cli::cat_rule("app.R")
 
 pkgload::load_all(export_all = FALSE,helpers = FALSE,attach_testthat = FALSE)
 
-
 options( "golem.app.prod" = TRUE)
 
 dat <- airquality$Ozone
 
-golemloadorder::run_app(data = dat) # add parameters here (if any)
+golemloadorder::run_app(
+  data = dat,
+  random_numb_from_outside = rnorm(1)
+) 
