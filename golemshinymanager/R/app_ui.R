@@ -10,7 +10,7 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # List the first level UI elements here 
     fluidPage(
-      h1("golemshinymanager")
+      mod_name_of_module1_ui("name_of_module1_ui_1")
     )
   )
 }
