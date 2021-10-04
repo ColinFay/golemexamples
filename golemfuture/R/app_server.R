@@ -32,7 +32,6 @@ app_server <- function( input, output, session ) {
     ff$n <- input$nsec
     ff$sys_sleep_and_run <- sys_sleep_and_run
     future({
-      #pkgload::load_all()
       ff$sys_sleep_and_run(ff$n)
     }) %...>%
       (function(result){
