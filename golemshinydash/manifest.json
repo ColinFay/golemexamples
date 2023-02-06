@@ -550,7 +550,7 @@
       }
     },
     "golem": {
-      "Source": "repo_FAGFCCZD",
+      "Source": "repo_ELVHVKFU",
       "Repository": "https://cran.rstudio.com",
       "description": {
         "Package": "golem",
@@ -1153,6 +1153,30 @@
         "Built": "R 4.2.0; ; 2022-12-16 13:14:05 UTC; unix"
       }
     },
+    "shinydashboard": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "shinydashboard",
+        "Title": "Create Dashboards with 'Shiny'",
+        "Version": "0.7.2",
+        "Authors@R": "c(\n    person(\"Winston\", \"Chang\", role = c(\"aut\", \"cre\"), email = \"winston@rstudio.com\"),\n    person(\"Barbara\", \"Borges Ribeiro\", role = \"aut\", email = \"barbara@rstudio.com\"),\n    person(family = \"RStudio\", role = \"cph\"),\n    person(family = \"Almasaeed Studio\", role = c(\"ctb\", \"cph\"), comment = \"AdminLTE theme for Bootstrap\"),\n    person(family = \"Adobe Systems Incorporated\", role = c(\"ctb\", \"cph\"), comment = \"Source Sans Pro font\")\n    )",
+        "Description": "Create dashboards with 'Shiny'. This package provides\n    a theme on top of 'Shiny', making it easy to create attractive dashboards.",
+        "URL": "http://rstudio.github.io/shinydashboard/",
+        "Depends": "R (>= 3.0)",
+        "License": "GPL (>= 2) | file LICENSE",
+        "Imports": "utils, shiny (>= 1.0.0), htmltools (>= 0.2.6), promises",
+        "BugReports": "https://github.com/rstudio/shinydashboard",
+        "RoxygenNote": "6.0.1.9000",
+        "NeedsCompilation": "no",
+        "Packaged": "2021-09-29 17:40:23 UTC; winston",
+        "Author": "Winston Chang [aut, cre],\n  Barbara Borges Ribeiro [aut],\n  RStudio [cph],\n  Almasaeed Studio [ctb, cph] (AdminLTE theme for Bootstrap),\n  Adobe Systems Incorporated [ctb, cph] (Source Sans Pro font)",
+        "Maintainer": "Winston Chang <winston@rstudio.com>",
+        "Repository": "CRAN",
+        "Date/Publication": "2021-09-30 12:10:06 UTC",
+        "Built": "R 4.2.0; ; 2022-04-12 23:39:52 UTC; unix"
+      }
+    },
     "sourcetools": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -1270,88 +1294,61 @@
   },
   "files": {
     ".Rbuildignore": {
-      "checksum": "941486f366fe6998fa3811b6d42fd5c5"
+      "checksum": "56a4d7c0d20163da5401f416cdf63ac4"
     },
     "app.R": {
-      "checksum": "b81fd13793577de577b3e451e9b782ee"
+      "checksum": "291f98fb7c5561848089220526fad44e"
     },
     "DESCRIPTION": {
-      "checksum": "bfb5250b9bc1ca22fb5050840e5366db"
+      "checksum": "4086f75430a91c9d0fa3d1f509ccbce1"
     },
     "dev/01_start.R": {
-      "checksum": "e52898a2a748038e151df00be896529a"
+      "checksum": "ae0c277620bcb7d41d701de09c8099d9"
     },
     "dev/02_dev.R": {
-      "checksum": "c19c65b19de06cb011b351c1dc6268e0"
+      "checksum": "ad64e50d78a8648561c8124dec70d5e3"
     },
     "dev/03_deploy.R": {
-      "checksum": "6aacf0ef79d7bd5c52704e8bc7309e42"
+      "checksum": "a56b8565a14dbd263cfd92245723e718"
     },
     "dev/run_dev.R": {
-      "checksum": "ecd89ef3bfdec5b604ea68149468fa04"
-    },
-    "inst/app/www/custom.css": {
-      "checksum": "55fac1f0aee76e5b2aa4b88bfa4a990e"
+      "checksum": "4f5e25c94c58a643eb546c2daa5dd47b"
     },
     "inst/app/www/favicon.ico": {
       "checksum": "81560d1b906a530c87fa0acbb2f5cca4"
     },
-    "inst/app/www/handlers.js": {
-      "checksum": "2f28c6de2dc6f9646e3d40bcc4255b6f"
-    },
-    "inst/app/www/notify.js": {
-      "checksum": "60828119043daf08ef9ec9dbe4ccdf54"
-    },
     "inst/golem-config.yml": {
-      "checksum": "86d43c40ed90dada46f2558ced900913"
-    },
-    "LICENSE": {
-      "checksum": "9f9cc481b573cd5536e71b017673e547"
-    },
-    "LICENSE.md": {
-      "checksum": "63e1ae0348328d9554f9a2db675d9f24"
-    },
-    "man/mod_my_first_module.Rd": {
-      "checksum": "bd7f34882408c7f14e0ab2e6606e7ee5"
-    },
-    "man/mod_my_second_module.Rd": {
-      "checksum": "44563796ddce03cfd7cb947994c9bacc"
+      "checksum": "33b673bdf2cf2459594d7b2c33524970"
     },
     "man/run_app.Rd": {
-      "checksum": "76155c64d91502813964c73b26e93fb0"
+      "checksum": "f002343af5365f34eb974eb06f4b3333"
     },
     "NAMESPACE": {
-      "checksum": "df774f24cb06525bdc9d827394006b87"
+      "checksum": "d1bdc37988ea7a16a9dd327bbe94fa9d"
+    },
+    "R/_disable_autoload.R": {
+      "checksum": "1178c335d6c11555fd1c4ec6098dfee6"
     },
     "R/app_config.R": {
-      "checksum": "e3a7a6a563e0fd71313bc5eacbf6e250"
+      "checksum": "b6ff163c4785485f4333c817bbd9aee9"
     },
     "R/app_server.R": {
-      "checksum": "656956869c521e1d3d93bddb922bd5b3"
+      "checksum": "8916455f47c2f47c12a6d46d40416242"
     },
     "R/app_ui.R": {
-      "checksum": "1f493140b2838eed2288a7e2aba44ed3"
+      "checksum": "e51de7b4d3aa4bd9344d286ec8afdb3c"
     },
-    "R/golem_utils_ui.R": {
-      "checksum": "cd471f0244c3be04271fc2c531f67422"
+    "R/mod_global_dash.R": {
+      "checksum": "2a2b1a0623c9eb2c2fda1d36ea016023"
     },
-    "R/mod_my_first_module.R": {
-      "checksum": "e5640b52e69a2f170b2ea33b1499259c"
+    "R/mod_name_of_module1.R": {
+      "checksum": "336e24d4401a86d29dd67af3994591d4"
     },
-    "R/mod_my_second_module.R": {
-      "checksum": "aab163d99174343053c4e1e45ed5fd00"
-    },
-    "R/mod_my_third_module.R": {
-      "checksum": "ea799d5f8b389964f64b8b2e47e14e4e"
+    "R/mod_name_of_module2.R": {
+      "checksum": "ac26e54d417b82662fca9726a4a5e232"
     },
     "R/run_app.R": {
-      "checksum": "b4955ac752ebeb7d81a0e7cb30e99e1c"
-    },
-    "README.md": {
-      "checksum": "cb2db730c797ba2fcb3fc8a7540c5d23"
-    },
-    "README.Rmd": {
-      "checksum": "5a1373d6de289f301e815462d5b6ee5d"
+      "checksum": "4da630de98c0ed734fff4d020646f02d"
     }
   },
   "users": null

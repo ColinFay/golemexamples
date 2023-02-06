@@ -11,6 +11,7 @@ License: What license is it under?
 Imports: 
     config,
     golem,
+    pkgload,
     shiny,
     shinydashboard
 Encoding: UTF-8

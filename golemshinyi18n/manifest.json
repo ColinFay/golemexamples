@@ -3,8 +3,8 @@
   "locale": "en_US",
   "platform": "4.2.2",
   "metadata": {
-    "appmode": "shiny",
-    "primary_rmd": null,
+    "appmode": "rmd-static",
+    "primary_rmd": "README.Rmd",
     "primary_html": null,
     "content_category": null,
     "has_parameters": false
@@ -317,42 +317,6 @@
         "RemoteSha": "1.5.2"
       }
     },
-    "desc": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
-      "description": {
-        "Package": "desc",
-        "Title": "Manipulate DESCRIPTION Files",
-        "Version": "1.4.2",
-        "Authors@R": "c(\n    person(\"Gábor\", \"Csárdi\", , \"csardi.gabor@gmail.com\", role = c(\"aut\", \"cre\")),\n    person(\"Kirill\", \"Müller\", role = \"aut\"),\n    person(\"Jim\", \"Hester\", , \"james.f.hester@gmail.com\", role = \"aut\"),\n    person(\"Maëlle\", \"Salmon\", role = \"ctb\",\n           comment = c(ORCID = \"0000-0002-2815-0399\")),\n    person(\"RStudio\", role = c(\"cph\", \"fnd\"))\n  )",
-        "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
-        "Description": "Tools to read, write, create, and manipulate DESCRIPTION\n    files.  It is intended for packages that create or manipulate other\n    packages.",
-        "License": "MIT + file LICENSE",
-        "URL": "https://github.com/r-lib/desc#readme,\nhttps://r-lib.github.io/desc/",
-        "BugReports": "https://github.com/r-lib/desc/issues",
-        "Depends": "R (>= 3.4)",
-        "Imports": "cli, R6, rprojroot, utils",
-        "Suggests": "callr, covr, gh, spelling, testthat, whoami, withr",
-        "Config/Needs/website": "tidyverse/tidytemplate",
-        "Config/testthat/edition": "3",
-        "Encoding": "UTF-8",
-        "Language": "en-US",
-        "RoxygenNote": "7.2.1.9000",
-        "Collate": "'assertions.R' 'authors-at-r.R' 'built.R' 'classes.R'\n'collate.R' 'constants.R' 'deps.R' 'desc-package.R'\n'description.R' 'encoding.R' 'latex.R' 'non-oo-api.R'\n'package-archives.R' 'read.R' 'remotes.R' 'str.R'\n'syntax_checks.R' 'urls.R' 'utils.R' 'validate.R' 'version.R'",
-        "NeedsCompilation": "no",
-        "Packaged": "2022-09-08 09:02:11 UTC; gaborcsardi",
-        "Author": "Gábor Csárdi [aut, cre],\n  Kirill Müller [aut],\n  Jim Hester [aut],\n  Maëlle Salmon [ctb] (<https://orcid.org/0000-0002-2815-0399>),\n  RStudio [cph, fnd]",
-        "Repository": "CRAN",
-        "Date/Publication": "2022-09-08 10:52:55 UTC",
-        "Built": "R 4.2.0; ; 2022-09-09 12:14:17 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "desc",
-        "RemoteRef": "desc",
-        "RemoteRepos": "https://cran.rstudio.com",
-        "RemotePkgPlatform": "x86_64-apple-darwin17.0",
-        "RemoteSha": "1.4.2"
-      }
-    },
     "digest": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -550,7 +514,7 @@
       }
     },
     "golem": {
-      "Source": "repo_FAGFCCZD",
+      "Source": "repo_XUDNNBDM",
       "Repository": "https://cran.rstudio.com",
       "description": {
         "Package": "golem",
@@ -915,40 +879,6 @@
         "RemoteSha": "0.12"
       }
     },
-    "pkgload": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
-      "description": {
-        "Package": "pkgload",
-        "Title": "Simulate Package Installation and Attach",
-        "Version": "1.3.2",
-        "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", role = \"aut\"),\n    person(\"Winston\", \"Chang\", role = \"aut\"),\n    person(\"Jim\", \"Hester\", role = \"aut\"),\n    person(\"Lionel\", \"Henry\", , \"lionel@rstudio.com\", role = c(\"aut\", \"cre\")),\n    person(\"RStudio\", role = c(\"cph\", \"fnd\")),\n    person(\"R Core team\", role = \"ctb\",\n           comment = \"Some namespace and vignette code extracted from base R\")\n  )",
-        "Description": "Simulates the process of installing a package and then\n    attaching it. This is a key part of the 'devtools' package as it\n    allows you to rapidly iterate while developing a package.",
-        "License": "GPL-3",
-        "URL": "https://github.com/r-lib/pkgload, https://pkgload.r-lib.org",
-        "BugReports": "https://github.com/r-lib/pkgload/issues",
-        "Depends": "R (>= 3.4.0)",
-        "Imports": "cli (>= 3.3.0), crayon, desc, fs, glue, methods, rlang (>=\n1.0.3), rprojroot, utils, withr (>= 2.4.3)",
-        "Suggests": "bitops, covr, mathjaxr, mockr, pak, pkgbuild, Rcpp, remotes,\nrstudioapi, testthat (>= 3.1.0)",
-        "Config/testthat/edition": "3",
-        "Config/Needs/website": "tidyverse/tidytemplate, ggplot2",
-        "Encoding": "UTF-8",
-        "RoxygenNote": "7.2.1",
-        "NeedsCompilation": "no",
-        "Packaged": "2022-11-14 14:04:57 UTC; lionel",
-        "Author": "Hadley Wickham [aut],\n  Winston Chang [aut],\n  Jim Hester [aut],\n  Lionel Henry [aut, cre],\n  RStudio [cph, fnd],\n  R Core team [ctb] (Some namespace and vignette code extracted from base\n    R)",
-        "Maintainer": "Lionel Henry <lionel@rstudio.com>",
-        "Repository": "CRAN",
-        "Date/Publication": "2022-11-16 15:20:13 UTC",
-        "Built": "R 4.2.0; ; 2022-11-17 13:51:22 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "pkgload",
-        "RemoteRef": "pkgload",
-        "RemoteRepos": "https://cran.rstudio.com",
-        "RemotePkgPlatform": "x86_64-apple-darwin17.0",
-        "RemoteSha": "1.3.2"
-      }
-    },
     "promises": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -1270,88 +1200,64 @@
   },
   "files": {
     ".Rbuildignore": {
-      "checksum": "941486f366fe6998fa3811b6d42fd5c5"
+      "checksum": "4eec6a1468140951d16ca2a3c2e6bf8e"
     },
-    "app.R": {
-      "checksum": "b81fd13793577de577b3e451e9b782ee"
+    "data-raw/i18n.R": {
+      "checksum": "2c1a69a8b41c4d4db0c184464384b639"
+    },
+    "data/i18n_for_pak.rda": {
+      "checksum": "1a869e0a6e98f08cd05b3f730947fd50"
+    },
+    "data/i18n.rda": {
+      "checksum": "7b7838d0a8edcdcb26ed7d329575736c"
     },
     "DESCRIPTION": {
-      "checksum": "bfb5250b9bc1ca22fb5050840e5366db"
+      "checksum": "12319da856e0d27a313a1c3b0b0dc5c0"
     },
     "dev/01_start.R": {
-      "checksum": "e52898a2a748038e151df00be896529a"
+      "checksum": "a2befa760245cf1652f315d76d444371"
     },
     "dev/02_dev.R": {
-      "checksum": "c19c65b19de06cb011b351c1dc6268e0"
+      "checksum": "d3d7d71ecce473c0a756102357246084"
     },
     "dev/03_deploy.R": {
-      "checksum": "6aacf0ef79d7bd5c52704e8bc7309e42"
+      "checksum": "74b3d8e66531020764d5199500ff4f29"
     },
     "dev/run_dev.R": {
-      "checksum": "ecd89ef3bfdec5b604ea68149468fa04"
-    },
-    "inst/app/www/custom.css": {
-      "checksum": "55fac1f0aee76e5b2aa4b88bfa4a990e"
+      "checksum": "4f5e25c94c58a643eb546c2daa5dd47b"
     },
     "inst/app/www/favicon.ico": {
       "checksum": "81560d1b906a530c87fa0acbb2f5cca4"
     },
-    "inst/app/www/handlers.js": {
-      "checksum": "2f28c6de2dc6f9646e3d40bcc4255b6f"
-    },
-    "inst/app/www/notify.js": {
-      "checksum": "60828119043daf08ef9ec9dbe4ccdf54"
-    },
     "inst/golem-config.yml": {
-      "checksum": "86d43c40ed90dada46f2558ced900913"
+      "checksum": "2c77767452038b0c3bd4edf6acb35afb"
     },
-    "LICENSE": {
-      "checksum": "9f9cc481b573cd5536e71b017673e547"
-    },
-    "LICENSE.md": {
-      "checksum": "63e1ae0348328d9554f9a2db675d9f24"
-    },
-    "man/mod_my_first_module.Rd": {
-      "checksum": "bd7f34882408c7f14e0ab2e6606e7ee5"
-    },
-    "man/mod_my_second_module.Rd": {
-      "checksum": "44563796ddce03cfd7cb947994c9bacc"
+    "inst/translation.json": {
+      "checksum": "707478cfb444bb6b1aa2e9d0a2c23387"
     },
     "man/run_app.Rd": {
-      "checksum": "76155c64d91502813964c73b26e93fb0"
+      "checksum": "53ff7d14121fca02ad0a583c05e5def7"
     },
     "NAMESPACE": {
-      "checksum": "df774f24cb06525bdc9d827394006b87"
+      "checksum": "5aa41ebd076bf06b187a48eb57b846a5"
     },
     "R/app_config.R": {
-      "checksum": "e3a7a6a563e0fd71313bc5eacbf6e250"
+      "checksum": "9f9cebbdd066c07edcf28cda8a3a40e5"
     },
     "R/app_server.R": {
-      "checksum": "656956869c521e1d3d93bddb922bd5b3"
+      "checksum": "3c8eecfa051620e8788a676d512ec166"
     },
     "R/app_ui.R": {
-      "checksum": "1f493140b2838eed2288a7e2aba44ed3"
-    },
-    "R/golem_utils_ui.R": {
-      "checksum": "cd471f0244c3be04271fc2c531f67422"
-    },
-    "R/mod_my_first_module.R": {
-      "checksum": "e5640b52e69a2f170b2ea33b1499259c"
-    },
-    "R/mod_my_second_module.R": {
-      "checksum": "aab163d99174343053c4e1e45ed5fd00"
-    },
-    "R/mod_my_third_module.R": {
-      "checksum": "ea799d5f8b389964f64b8b2e47e14e4e"
+      "checksum": "c6e9600ece469a01d4437e659caeb458"
     },
     "R/run_app.R": {
-      "checksum": "b4955ac752ebeb7d81a0e7cb30e99e1c"
+      "checksum": "57da3a9667e91eb2b7c86c7e1e0b4f87"
     },
     "README.md": {
-      "checksum": "cb2db730c797ba2fcb3fc8a7540c5d23"
+      "checksum": "723c9686efd7212c551c8cf5747bf2a3"
     },
     "README.Rmd": {
-      "checksum": "5a1373d6de289f301e815462d5b6ee5d"
+      "checksum": "be2428a9850036679ef714809a4eb44b"
     }
   },
   "users": null

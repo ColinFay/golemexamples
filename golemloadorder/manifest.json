@@ -550,7 +550,7 @@
       }
     },
     "golem": {
-      "Source": "repo_FAGFCCZD",
+      "Source": "repo_NZBIRUIF",
       "Repository": "https://cran.rstudio.com",
       "description": {
         "Package": "golem",
@@ -1093,6 +1093,37 @@
         "RemoteSha": "2.0.3"
       }
     },
+    "rstudioapi": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "rstudioapi",
+        "Title": "Safely Access the RStudio API",
+        "Description": "Access the RStudio API (if available) and provide informative error\n    messages when it's not.",
+        "Version": "0.14",
+        "Authors@R": "c(\n    person(\"Kevin\", \"Ushey\", role = c(\"aut\", \"cre\"), email = \"kevin@rstudio.com\"),\n    person(\"JJ\", \"Allaire\", role = c(\"aut\"), email = \"jj@rstudio.com\"),\n    person(\"Hadley\", \"Wickham\", role = c(\"aut\"), email = \"hadley@rstudio.com\"),\n    person(\"Gary\", \"Ritchie\", role = c(\"aut\"), email = \"gary@rstudio.com\"),\n    person(family = \"RStudio\", role = \"cph\")\n    )",
+        "Maintainer": "Kevin Ushey <kevin@rstudio.com>",
+        "License": "MIT + file LICENSE",
+        "URL": "https://rstudio.github.io/rstudioapi/,\nhttps://github.com/rstudio/rstudioapi",
+        "BugReports": "https://github.com/rstudio/rstudioapi/issues",
+        "RoxygenNote": "7.2.1.9000",
+        "Suggests": "testthat, knitr, rmarkdown, clipr, covr",
+        "VignetteBuilder": "knitr",
+        "Encoding": "UTF-8",
+        "NeedsCompilation": "no",
+        "Packaged": "2022-08-22 18:55:08 UTC; kevin",
+        "Author": "Kevin Ushey [aut, cre],\n  JJ Allaire [aut],\n  Hadley Wickham [aut],\n  Gary Ritchie [aut],\n  RStudio [cph]",
+        "Repository": "CRAN",
+        "Date/Publication": "2022-08-22 22:00:03 UTC",
+        "Built": "R 4.2.0; ; 2022-08-23 11:55:51 UTC; unix",
+        "RemoteType": "standard",
+        "RemotePkgRef": "rstudioapi",
+        "RemoteRef": "rstudioapi",
+        "RemoteRepos": "https://cran.rstudio.com",
+        "RemotePkgPlatform": "x86_64-apple-darwin17.0",
+        "RemoteSha": "0.14"
+      }
+    },
     "sass": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -1175,6 +1206,34 @@
         "Repository": "CRAN",
         "Date/Publication": "2023-02-01 10:10:02 UTC",
         "Built": "R 4.2.2; x86_64-apple-darwin17.0; 2023-02-03 08:33:08 UTC; unix"
+      }
+    },
+    "whereami": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "whereami",
+        "Type": "Package",
+        "Title": "Reliably Return the Source and Call Location of a Command",
+        "Description": "Robust and reliable functions to return informative outputs to \n        console with the run or source location of a command. This can be from\n        the  'RScript'/R terminal commands or 'RStudio' console, source editor, \n        'Rmarkdown' document and a Shiny application.",
+        "Version": "0.2.0",
+        "Authors@R": "c(\n        person(given = \"Jonathan\", family = \"Sidi\", email =\n        \"yonicd@gmail.com\", role = c(\"aut\", \"cre\"), comment = c(ORCID =\n        \"0000-0002-4222-1819\")), \n        person(\"Colin\", \"Fay\", email = \"contact@colinfay.me\", \n        role = c(\"ctb\"), comment=c(ORCID=\"0000-0001-7343-1846\")),\n        person(\"Kirill\", \"M\\u00fcller\", role = c(\"aut\"), \n        email = \"krlmlr+r@mailbox.org\", \n        comment = c(ORCID = \"0000-0002-1416-3412\"))\n        )",
+        "License": "MIT + file LICENSE",
+        "Depends": "R (>= 3.2.0)",
+        "Imports": "utils, graphics, grDevices, stats, cli, rstudioapi, jsonlite",
+        "URL": "https://github.com/yonicd/whereami",
+        "BugReports": "https://github.com/yonicd/whereami/issues",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.2.1",
+        "Suggests": "magrittr, ggplot2, kableExtra, testthat, covr, knitr,\nrmarkdown",
+        "VignetteBuilder": "knitr",
+        "NeedsCompilation": "no",
+        "Packaged": "2022-12-22 20:30:45 UTC; yoni.sidi",
+        "Author": "Jonathan Sidi [aut, cre] (<https://orcid.org/0000-0002-4222-1819>),\n  Colin Fay [ctb] (<https://orcid.org/0000-0001-7343-1846>),\n  Kirill Müller [aut] (<https://orcid.org/0000-0002-1416-3412>)",
+        "Maintainer": "Jonathan Sidi <yonicd@gmail.com>",
+        "Repository": "CRAN",
+        "Date/Publication": "2022-12-22 20:40:02 UTC",
+        "Built": "R 4.2.0; ; 2022-12-23 12:44:43 UTC; unix"
       }
     },
     "withr": {
@@ -1270,88 +1329,61 @@
   },
   "files": {
     ".Rbuildignore": {
-      "checksum": "941486f366fe6998fa3811b6d42fd5c5"
+      "checksum": "edae14c107f8e842681807eb0bd8e076"
     },
     "app.R": {
-      "checksum": "b81fd13793577de577b3e451e9b782ee"
+      "checksum": "f3da57374b27997c3b7267aaffe6038b"
     },
     "DESCRIPTION": {
-      "checksum": "bfb5250b9bc1ca22fb5050840e5366db"
+      "checksum": "c466df0b4d9c228bdd489ae923961e64"
     },
     "dev/01_start.R": {
-      "checksum": "e52898a2a748038e151df00be896529a"
+      "checksum": "50a93dd08b44b0efb42bbc29a60ddda0"
     },
     "dev/02_dev.R": {
-      "checksum": "c19c65b19de06cb011b351c1dc6268e0"
+      "checksum": "284f9deb306d3476cbcc893ae8b7aa8c"
     },
     "dev/03_deploy.R": {
-      "checksum": "6aacf0ef79d7bd5c52704e8bc7309e42"
+      "checksum": "74b3d8e66531020764d5199500ff4f29"
     },
     "dev/run_dev.R": {
-      "checksum": "ecd89ef3bfdec5b604ea68149468fa04"
-    },
-    "inst/app/www/custom.css": {
-      "checksum": "55fac1f0aee76e5b2aa4b88bfa4a990e"
+      "checksum": "9916635f5427f2d3d6026e911e729b92"
     },
     "inst/app/www/favicon.ico": {
       "checksum": "81560d1b906a530c87fa0acbb2f5cca4"
     },
-    "inst/app/www/handlers.js": {
-      "checksum": "2f28c6de2dc6f9646e3d40bcc4255b6f"
-    },
-    "inst/app/www/notify.js": {
-      "checksum": "60828119043daf08ef9ec9dbe4ccdf54"
-    },
     "inst/golem-config.yml": {
-      "checksum": "86d43c40ed90dada46f2558ced900913"
-    },
-    "LICENSE": {
-      "checksum": "9f9cc481b573cd5536e71b017673e547"
-    },
-    "LICENSE.md": {
-      "checksum": "63e1ae0348328d9554f9a2db675d9f24"
-    },
-    "man/mod_my_first_module.Rd": {
-      "checksum": "bd7f34882408c7f14e0ab2e6606e7ee5"
-    },
-    "man/mod_my_second_module.Rd": {
-      "checksum": "44563796ddce03cfd7cb947994c9bacc"
+      "checksum": "4db65f99ebe68e0bc3cdedfc5556fe3c"
     },
     "man/run_app.Rd": {
-      "checksum": "76155c64d91502813964c73b26e93fb0"
+      "checksum": "53ff7d14121fca02ad0a583c05e5def7"
     },
     "NAMESPACE": {
-      "checksum": "df774f24cb06525bdc9d827394006b87"
+      "checksum": "5aa41ebd076bf06b187a48eb57b846a5"
+    },
+    "R/_disable_autoload.R": {
+      "checksum": "1178c335d6c11555fd1c4ec6098dfee6"
     },
     "R/app_config.R": {
-      "checksum": "e3a7a6a563e0fd71313bc5eacbf6e250"
+      "checksum": "5970bb4c1293d9310246d5c88231efe8"
     },
     "R/app_server.R": {
-      "checksum": "656956869c521e1d3d93bddb922bd5b3"
+      "checksum": "6d5e3573915a58355b1561bbf538def6"
     },
     "R/app_ui.R": {
-      "checksum": "1f493140b2838eed2288a7e2aba44ed3"
+      "checksum": "0dba98fbbc2eb4f0ff98e0106f972d17"
     },
-    "R/golem_utils_ui.R": {
-      "checksum": "cd471f0244c3be04271fc2c531f67422"
-    },
-    "R/mod_my_first_module.R": {
-      "checksum": "e5640b52e69a2f170b2ea33b1499259c"
-    },
-    "R/mod_my_second_module.R": {
-      "checksum": "aab163d99174343053c4e1e45ed5fd00"
-    },
-    "R/mod_my_third_module.R": {
-      "checksum": "ea799d5f8b389964f64b8b2e47e14e4e"
+    "R/mod_one.R": {
+      "checksum": "ceea06795da915e4bf4014e923b234ce"
     },
     "R/run_app.R": {
-      "checksum": "b4955ac752ebeb7d81a0e7cb30e99e1c"
+      "checksum": "20d451b64e6576e116f9e2c31abb3dde"
     },
     "README.md": {
-      "checksum": "cb2db730c797ba2fcb3fc8a7540c5d23"
+      "checksum": "a09624d7c50a2c1c62405fa972d2b0f3"
     },
     "README.Rmd": {
-      "checksum": "5a1373d6de289f301e815462d5b6ee5d"
+      "checksum": "24a8a405cd376651b2161e9f2d49399c"
     }
   },
   "users": null
