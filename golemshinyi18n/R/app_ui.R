@@ -6,34 +6,32 @@
 #' @importFrom shiny.i18n usei18n
 #' @noRd
 app_ui <- function(request) {
+  # Request-local translator: renders the initial labels in the configured
+  # default language without mutating the process-wide `i18n_for_pak`.
+  i18n <- new_translator()
   tagList(
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # Your application UI logic
     fluidPage(
-      # Inject the shiny.i18n translations so the language can be
+      # Inject the (read-only) translation table so the language can be
       # switched live on the client side.
       usei18n(i18n_for_pak),
       div(
         style = "float: right;",
         selectInput(
           inputId = "selected_language",
-          label = i18n_for_pak$t("label_change_lang"),
-          # The key language ("id") is a reference, not a displayable
-          # language, so keep it out of the dropdown.
-          choices = setdiff(
-            i18n_for_pak$get_languages(),
-            i18n_for_pak$get_key_translation()
-          ),
-          selected = "en"
+          label = i18n$t("label_change_lang"),
+          choices = displayable_languages(),
+          selected = get_default_language()
         )
       ),
-      titlePanel(i18n_for_pak$t("title_hello")),
+      titlePanel(i18n$t("title_hello")),
       sidebarLayout(
         sidebarPanel(
           sliderInput(
             inputId = "bins",
-            label = i18n_for_pak$t("label_bins"),
+            label = i18n$t("label_bins"),
             min = 1,
             max = 50,
             value = 30

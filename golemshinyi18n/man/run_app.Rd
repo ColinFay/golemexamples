@@ -9,7 +9,7 @@ run_app(
   options = list(),
   enableBookmarking = NULL,
   uiPattern = "/",
-  language = "pl"
+  language = "en"
 )
 }
 \arguments{
@@ -33,8 +33,10 @@ request to determine whether the \code{ui} should be used to handle the
 request. Note that the entire request path must match the regular
 expression in order for the match to be considered successful.}
 
-\item{...}{arguments to pass to golem_opts.
-See `?golem::get_golem_options` for more details.}
+\item{language}{Default display language code. Must be one of the
+non-key languages declared in `inst/translation.json` (e.g. "en", "pl").
+It is exposed to the app through golem options rather than mutating the
+shared translator, so concurrent sessions stay isolated.}
 }
 \description{
 Run the Shiny Application

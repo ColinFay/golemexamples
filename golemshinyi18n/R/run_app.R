@@ -1,7 +1,9 @@
 #' Run the Shiny Application
 #'
-#' @param ... arguments to pass to golem_opts.
-#' See `?golem::get_golem_options` for more details.
+#' @param language Default display language code. Must be one of the
+#'   non-key languages declared in `inst/translation.json` (e.g. "en", "pl").
+#'   It is exposed to the app through golem options rather than mutating the
+#'   shared translator, so concurrent sessions stay isolated.
 #' @inheritParams shiny::shinyApp
 #'
 #' @export
@@ -12,9 +14,8 @@ run_app <- function(
   options = list(),
   enableBookmarking = NULL,
   uiPattern = "/",
-  language = "pl"
+  language = "en"
 ) {
-  i18n_for_pak$set_translation_language(language)
   with_golem_options(
     app = shinyApp(
       ui = app_ui,
@@ -24,6 +25,6 @@ run_app <- function(
       enableBookmarking = enableBookmarking,
       uiPattern = uiPattern
     ),
-    golem_opts = list()
+    golem_opts = list(default_language = language)
   )
 }

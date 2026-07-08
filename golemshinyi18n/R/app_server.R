@@ -7,14 +7,22 @@
 #' @importFrom graphics hist
 #' @noRd
 app_server <- function( input, output, session ) {
-  # Your application server logic
+  # Per-session translator: a private clone of the shared template, so
+  # switching language here never affects any other concurrent session.
+  # It re-derives whenever the user picks another language.
+  i18n <- reactive({
+    lang <- input$selected_language
+    if (is.null(lang)) lang <- get_default_language()
+    new_translator(lang)
+  })
 
-  # Switch the language live when the user picks another one.
+  # Switch the language live in the browser for every UI-embedded string.
   observeEvent(input$selected_language, {
     update_lang(input$selected_language, session)
   })
 
   output$distPlot <- renderPlot({
+    tr <- i18n()
     x <- datasets::faithful[, 2]
     bins <- seq(min(x), max(x), length.out = input$bins + 1)
 
@@ -23,9 +31,9 @@ app_server <- function( input, output, session ) {
       breaks = bins,
       col = "darkgray",
       border = "white",
-      main = i18n_for_pak$t("title_histogram"),
-      xlab = i18n_for_pak$t("label_frequency"),
-      ylab = i18n_for_pak$t("label_frequency")
+      main = tr$t("title_histogram"),
+      xlab = tr$t("label_frequency"),
+      ylab = tr$t("label_frequency")
     )
   })
 }
