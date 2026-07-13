@@ -1,11 +1,31 @@
 {
-  "languages": ["en", "pl"],
+  "languages": ["id", "en", "pl"],
   "translation": [
-      {"en": "Hello Shiny!", "pl": "Witaj Shiny!"},
-      {
-        "en": "Frequency",
-        "pl": "Częstotliwość"
-      }
-    ],
+    {
+      "id": "title_hello",
+      "en": "Hello Shiny!",
+      "pl": "Witaj Shiny!"
+    },
+    {
+      "id": "label_change_lang",
+      "en": "Change language",
+      "pl": "Zmień język"
+    },
+    {
+      "id": "label_bins",
+      "en": "Number of bins:",
+      "pl": "Liczba przedziałów:"
+    },
+    {
+      "id": "label_frequency",
+      "en": "Frequency",
+      "pl": "Częstotliwość"
+    },
+    {
+      "id": "title_histogram",
+      "en": "Histogram of x",
+      "pl": "Histogram zmiennej x"
+    }
+  ],
   "cultural_date_format": "%d-%m-%Y"
 }
